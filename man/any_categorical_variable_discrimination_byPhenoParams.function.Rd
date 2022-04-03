@@ -60,6 +60,6 @@ namesVariablesDf, df1, df2, df3,df4, df5, df6, MFA1, MFA2, MFA3,nbVarF, nbVarTot
 MFA extraction - Creation of plots input dataframes
 }
 \examples{
-any_categorical_variable_discrimination_byPhenoParams.function,linear_equation_phenoVars_discrimination.function,stats_cosineDistance_plot1.function,
+any_categorical_variable_discrimination_byPhenoParams.function(InputdataPCAMix,nameExperiment,catVarName,phenoColourDf,indSexCond,phenoSocial_4analysis,qualiVars,nameModel)
 
 }

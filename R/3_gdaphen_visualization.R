@@ -11,17 +11,12 @@
 #' @return The plot 0 is generated in the cumulativeVariance folder 
 #'
 #' @examples
-#' cumVariance_Plot.function(res_PCAmixData_phenoAll_4analysis,"res_PCAmixData_phenoAll_4analysis")
-#' cumVariance_Plot.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"res_PCAmixData_phenoAll_4analysis_woHighCor_sel1")
-#' cumVariance_Plot.function(res_PCAmixData_parameters_more_30perc_informative_Genotype,"res_PCAmixData_parameters_more_30perc_informative_Genotype")
-#' cumVariance_Plot.function(res_PCAmixData_parameters_more_30perc_informative_woGenotype,"res_PCAmixData_parameters_more_30perc_informative_woGenotype")
+#' cumVariance_Plot.function(res_PCAmixData_phenoAll_4analysis,"res_PCAmixData_phenoAll_4analysis");
+#' cumVariance_Plot.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"res_PCAmixData_phenoAll_4analysis_woHighCor_sel1");
+#' cumVariance_Plot.function(res_PCAmixData_parameters_more_30perc_informative_Genotype,"res_PCAmixData_parameters_more_30perc_informative_Genotype");
+#' cumVariance_Plot.function(res_PCAmixData_parameters_more_30perc_informative_woGenotype,"res_PCAmixData_parameters_more_30perc_informative_woGenotype");
 #'
 #' @export
-
-####################################################
-##   Plot A or 0: Cumulative variance and proportion  
-##   variance explained by each dimension of the PCA
-####################################################
 cumVariance_Plot.function <- function(ResPCAmixData,nameOutput){
 	f_cumVar <- "cumulativeVariance/"
 	dir.create(file.path(wd,"/",f_pheno_discrimination,f_results,f_cumVar), showWarnings = F);
@@ -322,8 +317,6 @@ plot1_all_variables_correlation.function <- function(name,catVarName,nameExperim
 	print(pf1_nb);
 	print(pf1b);
 	dev.off();
-
-
 	};
 
 
@@ -482,8 +475,10 @@ plot2_grouped_vars_correlation_PCAs.function <- function(name,catVarName,nameExp
 #' to select the better for publications (landscape, vertical, 1 plot alone or all plots together.
 #'
 #' @examples
-#' plot3_Individual_component_PCA.function(name,catVarName,"Genotype","colPalette_cond_Geno",nameExperiment,4,nameModel) #run for all the genotypes comparison
-#' plot3_Individual_component_PCA.function(name,catVarName,"cond_Geno_Sex","colPalette_cond_Geno_Sex",paste0(nameExperiment,"_condGeno_sex"),4,nameModel) #run for all the genotypes comparison
+#' #run for all the genotypes comparison
+#' plot3_Individual_component_PCA.function(name,catVarName,"Genotype","colPalette_cond_Geno",nameExperiment,4,nameModel) 
+#' #run for all the genotypes comparison
+#' plot3_Individual_component_PCA.function(name,catVarName,"cond_Geno_Sex","colPalette_cond_Geno_Sex",paste0(nameExperiment,"_condGeno_sex"),4,nameModel) 
 #'
 #' @export
 plot3_Individual_component_PCA.function <- function(name,catVarName,condition4Plot,colPalette,nameExperiment,nrowLegend,nameModel){
@@ -1049,7 +1044,54 @@ plot6_qualitative_vars_discrimination_PCA.function <- function(name,catVarName,n
 
 
 
-
+#' plot3 - Individuals observations in 3D-PCA
+#'
+#' @name scatterplot3d.function 
+#'
+#' @param input_scatterplot3d input df dataframe o df3 or further customized
+#' @param name name for the plot or specific to the session
+#'
+#' @param catVarName Column name of the qualitative
+#'  variable or categorical variable that is your dependant 
+#'  variable, the one for which one you want to identify the most discriminative variables  
+#' 
+#' @param nameExperiment The name of the experiment together with the number of variables we included. 
+#' if is all model, allthe variables. Instead if is the selected model is less variables. 
+#' ex: 
+#' 1. nameExperiment <- paste0(name,"_", length(colnames(phenoSocial_4analysis)), " variables"); #all variables
+#' 2. nameExperiment <- paste0(name,"_", length(colnames(phenoAll_4analysis_woHighCor_sel1)), " variables"); · without highly correlated
+#' 3. nameExperiment <- paste0(name,"_", " more informative variables ",length(colnames(parameters_more_30perc_informative_Genotype)) ) #selected variables
+#'
+#' @param colorByColumn If several conditions can be plotted. Ex Genotype, Genotype+ treatments, etc.
+#' identify here the name of the variable to plot, is the name of the column from df3 that you want to plot.
+#'
+#' @param colPalette_toPlot Column name from df3 that have the color assignation to plot the columns condition4Plot
+#'
+#'
+#' @param height height ize in inches for the plot  
+#'
+#' @param width width size in inches for the plot
+#'
+#'
+#' @param m layout in a matrix to organise the plots for plotting
+#'
+#' @param ncolLegend Number of columns the legend should be split to, to format properly for publications.
+#'
+#' @param nameModel Short naming for the model you are using.
+#' Ex: "fullMdl" for the model including all variables;"Sel1" for the model not including the
+#' highly correlated variables, "Sel30" for the model including only the variables contributing
+#' more thana 30%
+#' 
+#' @return The 3D plots similar to the 2Dimension plot3 is generated in the plot3 folder in three different kind of organizations
+#' to select the better for publications (landscape, vertical, 1 plot alone or all plots together.
+#'
+#' @examples
+#' #run for all the genotypes comparison
+#' m <- rbind(c(1,1,2))
+#' scatterplot3d.function(input_scatterplot3d.all,name, catVarName, nameExperiment,"Genotype","colPalette_cond_Geno",5.1,8,m,1,nameModel)
+#' scatterplot3d.function(input_scatterplot3d.all,name, catVarName, nameExperiment,"cond_Geno_Sex","colPalette_cond_Geno_Sex",5.1,8,m,1,nameModel)
+#'
+#' @export
 scatterplot3d.function <- function(input_scatterplot3d,name, catVarName, nameExperiment,colorByColumn,colPalette_toPlot,height,width,m,ncolLegend,nameModel){
 	#library("scatterplot3d");
     load( file=paste0(wd, f_pheno_discrimination,f_results, f_Rdata,name,"_",nameModel,"_",catVarName,"_Robject_for_plots.RData")) 
@@ -1150,8 +1192,8 @@ scatterplot3d.function <- function(input_scatterplot3d,name, catVarName, nameExp
 #' @examples
 #height <-4
 #width <-4.5
-#paralellePlot.function(inputDf_parallele_Sumup_Genotype,inputDf_parallele_Ind,parallelePlot_phenoColourDf,"AllGenotypes_Sexes",height,width)
-
+#paralellePlot.function(inputDf_parallele_Sumup_Genotype,inputDf_parallele_Ind,parallelePlot_phenoColourDf,"AllGenotypes_Sexes",height,width);
+#' 
 #' @export
 paralellePlot.function <- function(inputDf_parallele_Sumup,inputDf_parallele_Ind,parallelePlot_phenoColourDf,nameOutput,height,width){
 	##########################################@

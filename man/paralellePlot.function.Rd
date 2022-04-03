@@ -41,3 +41,6 @@ to select the better for publications (landscape, vertical, 1 plot alone or all 
 \description{
 parallel plot
 }
+\examples{
+
+}

@@ -77,7 +77,7 @@ mfa.function <- function(dataInputPCA,catVarNb, nameOutput){
 
 #' More informativeVars in PCA - Identification of Sel30 variables
 #'
-#' @name any_categorical_variable_discrimination_selection_most_informative_params_more_30.function 
+#' @name informative_params_more_30.function 
 #'
 #' @param InputdataPCAMix The input is the output from the mfa.function, the object: [res_PCAmixData_]nameOutput 
 #'
@@ -97,13 +97,13 @@ mfa.function <- function(dataInputPCA,catVarNb, nameOutput){
 #' catVarName, and followed by "_sel_Vars_contribution_more_30perc_plus_categorical"
 #'
 #' @examples
-#' # for discrimination of  Genotype:
-#' any_categorical_variable_discrimination_selection_most_informative_params_more_30.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"Genotype",phenoColourDf)
-#' # for discrimination of  Sex:
-#' any_categorical_variable_discrimination_selection_most_informative_params_more_30.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"Sex",phenoColourDf)
+#' # for discrimination of  Genotype
+#' informative_params_more_30.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"Genotype",phenoColourDf);
+#' # for discrimination of  Sex
+#' informative_params_more_30.function(res_PCAmixData_phenoAll_4analysis_woHighCor_sel1,"Sex",phenoColourDf);
 #'
 #' @export
-any_categorical_variable_discrimination_selection_most_informative_params_more_30.function <- function(InputdataPCAMix,catVarName,phenoColourDf){
+informative_params_more_30.function <- function(InputdataPCAMix,catVarName,phenoColourDf){
 	# description: For your variable of interest, selection of explanatory features 
 	# contributing to the discrimination more than a 30% after running the MFA 
 	# analysis.
@@ -183,7 +183,7 @@ any_categorical_variable_discrimination_selection_most_informative_params_more_3
 #' @param phenoSocial_4analysis The input is the output from the mfa.function, the object: [res_PCAmixData_]nameOutput 
 #'
 #' @param sel_Vars_contribution_more_30perc_plus_categorical Output of the function
-#' any_categorical_variable_discrimination_selection_most_informative_params_more_30.function
+#' informative_params_more_30.function
 #'  variable or categorical variable that is your dependant 
 #'  variable, the one for which one you want to identify the most discriminative variables  
 #'
@@ -192,7 +192,7 @@ any_categorical_variable_discrimination_selection_most_informative_params_more_3
 #' @return A dataframe, like phenoSocial_4analysis but containing only the columns
 #' or variables that are contributing more than a 30% to the discrimination
 #' Contrary to the dataframe produced by 
-#' any_categorical_variable_discrimination_selection_most_informative_params_more_30.function
+#' informative_params_more_30.function
 #' in this case, the columns are following the order specified by the experimentator in phenoSocial_4analysis
 #' These columns do not follow the order the experimentator provided in the dataInputPCA. 
 #' The output has  aprefix= "parameters_more_30perc_informative_" and as  a sufix nameOutput
@@ -259,8 +259,8 @@ parameters_more_30perc_informative_creation_InputDf.function<- function(phenoSoc
 #' namesVariablesDf, df1, df2, df3,df4, df5, df6, MFA1, MFA2, MFA3,nbVarF, nbVarTotalF'
 #'
 #' @examples
-#' any_categorical_variable_discrimination_byPhenoParams.function,linear_equation_phenoVars_discrimination.function,stats_cosineDistance_plot1.function,
-#'
+#'any_categorical_variable_discrimination_byPhenoParams.function(InputdataPCAMix,nameExperiment,catVarName,phenoColourDf,indSexCond,phenoSocial_4analysis,qualiVars,nameModel)
+#' 
 #' @export
 any_categorical_variable_discrimination_byPhenoParams.function <- function(InputdataPCAMix,nameExperiment,catVarName,phenoColourDf,indSexCond,InputDf,qualiVars,nameModel){
  	# description: Formatting the mfa.function output (InputdataPCAMix).

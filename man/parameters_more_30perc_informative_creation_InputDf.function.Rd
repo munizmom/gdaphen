@@ -14,7 +14,7 @@ parameters_more_30perc_informative_creation_InputDf.function(
 \item{phenoSocial_4analysis}{The input is the output from the mfa.function, the object: \link{res_PCAmixData_}nameOutput}
 
 \item{sel_Vars_contribution_more_30perc_plus_categorical}{Output of the function
-any_categorical_variable_discrimination_selection_most_informative_params_more_30.function
+informative_params_more_30.function
 variable or categorical variable that is your dependant
 variable, the one for which one you want to identify the most discriminative variables}
 
@@ -24,7 +24,7 @@ variable, the one for which one you want to identify the most discriminative var
 A dataframe, like phenoSocial_4analysis but containing only the columns
 or variables that are contributing more than a 30\% to the discrimination
 Contrary to the dataframe produced by
-any_categorical_variable_discrimination_selection_most_informative_params_more_30.function
+informative_params_more_30.function
 in this case, the columns are following the order specified by the experimentator in phenoSocial_4analysis
 These columns do not follow the order the experimentator provided in the dataInputPCA.
 The output has  aprefix= "parameters_more_30perc_informative_" and as  a sufix nameOutput
