@@ -1,0 +1,44 @@
+Package: gdaphen
+Title: "Genotype DiscriminAtion using PHENotypic, ddPCR, or quali/quantitative variables"
+Version: 0.0.0.9000
+Authors@R: 
+    person("Mar", "Muniz Moreno", , "munizmorenomariadelmar@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-2662-890X"))
+Description: a R pipeline to identify the most important predictor qualitative and quantitative variables for discrimination of your variable of interest like genotype or sex or response to treatment by using phenotypic or clinical data from different diseases.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    base,
+    caret,
+    cowplot,
+    data.table,
+    dplyr,
+    extrafont,
+    FactoMineR,
+    gdata,
+    ggforce,
+    ggplot2,
+    ggpubr,
+    grDevices,
+    grid,
+    gridBase,
+    gridGraphics,
+    gtable,
+    gtools,
+    Hmisc,
+    lattice,
+    mlbench,
+    openxlsx,
+    PCAmixdata,
+    randomcoloR,
+    randomForest,
+    RColorBrewer,
+    readxl,
+    rlist,
+    Rmisc,
+    scatterplot3d,
+    stringr,
+    tidyr,
+    xlsx
