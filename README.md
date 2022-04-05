@@ -7,7 +7,7 @@ This pipeline was developped in [Yann's Herault team](https://www.igbmc.fr/igbmc
 
 Gdaphen makes the analysis of phenotypic data much easier for medical researchers or behaviorists providing an integrated framework to perform: i) pre-processing steps as data imputation or anonymization; ii)  a full statistical assessment based in GLM and RF classifiers implementing a powerful variable selecting method based on MFA to identify which behavioral predictor variables are most important to discriminate your variable of interest; iii) state of the art visualizations ready for publication to support the conclusions of the analyses.
 
-Other contributors that **must** be acknowledge for providing great discussions in stats, their needs, expectatives and requirements for the plots  in the publications are **Yann Herault, Claire Gaveriaux-Ruff, Yaping Xue, Celeste Chidiac, Monsier Arnaud Duchon, Gopal Krishna and Valerie Herault**. And the last is not the less important! as Valerie is currently developping further functionalities for this project. 
+Other contributors that **must** be acknowledged for providing great discussions in stats, in their analytical needs, expectatives and requirements for the plots are **Yann Herault, Claire Gaveriaux-Ruff, Yaping Xue, Celeste Chidiac, Monsier Arnaud Duchon, Gopal Krishna and Valerie Herault**. And the last is not the less important! as Valerie is currently developping further functionalities for this project. 
 
 Thanks also to **Corentin Guioullier** that did his Master in statistics stage in with us and tried out the gdaphen scripts in Jupyter notebook.
 
