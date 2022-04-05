@@ -3,9 +3,7 @@
 [](https://img.shields.io/badge/Gdaphen-v0.0-pink)
 gdaphen is a R pipeline to identify the most important predictors qualitative and quantitative variables for discrimination of your variable of interest (like genotype or sex or response to treatment), by using phenotypic, ddPCR or clinical data from different diseases. Gdaphen is able to perform the analyses in individual variables and grouped variables that facilitate the assesment of behavioral or diagnostic tests as many variables are scored in the same tests.
 
-This pipeline was developped in [Yann's Herault team](https://www.igbmc.fr/igbmc/missions/annuaire/yann-herault) as part of one of my postDoc projects and thanks to Yann's supervision.
-
-Gdaphen came to exist to perform and in deep statistically assessment of scored variables contributing to genotype effects, focusing specifically in elucidating which variables where contributing in explaining gene dosage effects in mouse and rat models carrying genomic duplications or Knock-out models.
+This pipeline was developped in [Yann's Herault team](https://www.igbmc.fr/igbmc/missions/annuaire/yann-herault) as part of one of my postDoc projects and thanks to Yann's supervision.Gdaphen came to exist to perform an in deep statistically assessment of scored variables contributing to genotype effects, focusing specifically in elucidating which variables where contributing in explaining gene dosage effects in mouse and rat models carrying genomic duplications or Knock-out models.
 
 Gdaphen makes the analysis of phenotypic data much easier for medical researchers or behaviorists providing an integrated framework to perform: i) pre-processing steps as data imputation or anonymization; ii)  a full statistical assessment based in GLM and RF classifiers implementing a powerful variable selecting method based on MFA to identify which behavioral predictor variables are most important to discriminate your variable of interest; iii) state of the art visualizations ready for publication to support the conclusions of the analyses.
 
@@ -65,11 +63,11 @@ library(gdaphen);
 
 ## gdaphen modules:
 
-Gdaphen provides an environment with functions to perform:
+Gdaphen provides an environment to perform:
 
 1.  Pre-processing functions to aid in shaping the input data . Stored in the **module preProcessing**. 
-2.  Statistical analyses. Stored in the **module analysis**
-3.  Visualizations or plotting functions. Stored in the **module visualization**
+2.  Statistical analyses. Stored in the **module analysis**.
+3.  Visualizations or plotting functions. Stored in the **module visualization**.
 
 - Note: Please take also a look at the examples provided. These examples provide further help in pre-processing, assigning specific colours to the variables or observations or give you examples of how to impute missing values.
 
@@ -84,16 +82,18 @@ Gdaphen provides an environment with functions to perform:
 
 ## Publications using gdaphen:
 For now only our team Herault members @IGBMC Strasbourg used it but we hope others... as the reader, will like to implement it.
-The gdaphen methods manuscript is undergoing but a detailed explanation of the method can be found [here](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full#supplementary-material).
+The gdaphen methods manuscript is undergoing but a detailed explanation of the method can be found [here].(https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full#supplementary-material).
 
 
-1.[**Chidiac C, Xue Y, Muniz Moreno MDM, et al.** The Human SCN10AG1662S Point Mutation Established in Mice Impacts on Mechanical, Heat, and Cool Sensitivity. *Front Pharmacol*. 2021 Dec 1;12:780132. ](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full). [Take a look at figure 5](https://www.frontiersin.org/files/Articles/780132/fphar-12-780132-HTML/image_m/fphar-12-780132-g005.jpg)
+1. [**Chidiac C, Xue Y, Muniz Moreno MDM, et al.** The Human SCN10AG1662S Point Mutation Established in Mice Impacts on Mechanical, Heat, and Cool Sensitivity. *Front Pharmacol*. 2021 Dec 1;12:780132. ](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full). [Take a look at figure 5](https://www.frontiersin.org/files/Articles/780132/fphar-12-780132-HTML/image_m/fphar-12-780132-g005.jpg)
 2. Two other papers are currently under revision using this method, stay tuned for more examples in more complex datasets!
 
 
 ## Contributions
-Pull requests are always welcomed!. For major changes, problems, extra functionalities or if you need aid to run gdaphen in your own data please open an issue first or contact me (munizmorenomariadelmar@gmail.com) and Yann Herault herault@igbmc.fr) to discuss.
+Pull requests are always welcomed!. For major changes, problems, extra functionalities or if you need some help to run gdaphen in your own data please open an issue first or contact  Yann Herault (herault@igbmc.fr) and me (munizmorenomariadelmar@gmail.com) to discuss.
 
 ## License
 [GPL-3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+
 
