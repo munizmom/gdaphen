@@ -1,15 +1,17 @@
 # gdaphen
 
 [](https://img.shields.io/badge/Gdaphen-v0.0-pink)
-gdaphen is a R pipeline to identify the most important predictor qualitative and quantitative variables for discrimination of your variable of interest like genotype or sex or response to treatment, by using phenotypic or clinical data from different diseases.Gdaphen is able to perform the analyses in individual variables and grouped variables that facilitate the assesment of behavioral tests a¡for example, as many variables are scored in the same tests.
+gdaphen is a R pipeline to identify the most important predictors qualitative and quantitative variables for discrimination of your variable of interest (like genotype or sex or response to treatment), by using phenotypic, ddPCR or clinical data from different diseases. Gdaphen is able to perform the analyses in individual variables and grouped variables that facilitate the assesment of behavioral or diagnostic tests as many variables are scored in the same tests.
 
-This pipeline was developped by me, Mar Muniz Moreno as a postDoc in [Yann's Herault team](https://www.igbmc.fr/igbmc/missions/annuaire/yann-herault).
+This pipeline was developped in [Yann's Herault team](https://www.igbmc.fr/igbmc/missions/annuaire/yann-herault) as part of one of my postDoc projects and thanks to Yann's supervision.
 
-The main aim was to provide an environment, easily applicable for biologists, to perform a more indeed statistically assessment of phenotypic variables contributing to genotype effects. We specially focused in understanding gene dosages as in the lab they are working in mouse and rat models carrying genomic duplications or KO models.
+Gdaphen came to exist to perform and in deep statistically assessment of scored variables contributing to genotype effects, focusing specifically in elucidating which variables where contributing in explaining gene dosage effects in mouse and rat models carrying genomic duplications or Knock-out models.
+
+Gdaphen makes the analysis of phenotypic data much easier for medical researchers or behaviorists providing an integrated framework to perform: i) pre-processing steps as data imputation or anonymization; ii)  a full statistical assessment based in GLM and RF classifiers implementing a powerful variable selecting method based on MFA to identify which behavioral predictor variables are most important to discriminate your variable of interest; iii) state of the art visualizations ready for publication to support the conclusions of the analyses.
 
 Other contributors that **must** be acknowledge for providing great discussions in stats, their needs, expectatives and requirements for the plots  in the publications are **Yann Herault, Claire Gaveriaux-Ruff, Yaping Xue, Celeste Chidiac, Monsier Arnaud Duchon, Gopal Krishna and Valerie Herault**. And the last is not the less important! as Valerie is currently developping further functionalities for this project. 
 
-Thanks also to **Corentin Guioullier** that did his Master in statistics with us and tried out the gdaphen analysis scripts and prepared a jupyter notebook version of it.
+Thanks also to **Corentin Guioullier** that did his Master in statistics stage in with us and tried out the gdaphen scripts in Jupyter notebook.
 
 ![gdaphen](https://github.com/munizmom/gdaphen/blob/master/images/graphicalAbstract.jpg)
 
@@ -65,11 +67,11 @@ library(gdaphen);
 
 Gdaphen provides an environment with functions to perform:
 
-1.  Pre-processing functions to aid in shaping the input data are stored in the **module preProcessing**. 
-2.  Statistical analyses **module analysis**
-3.  Visualizations or plotting of the analytical results in the **module visualization**
+1.  Pre-processing functions to aid in shaping the input data . Stored in the **module preProcessing**. 
+2.  Statistical analyses. Stored in the **module analysis**
+3.  Visualizations or plotting functions. Stored in the **module visualization**
 
-- Note: Please take also a look at the examples provided. They provide further help in preprocessing, assigning specific colours to the variables or observations or give you examples of how to impute missing values.
+- Note: Please take also a look at the examples provided. These examples provide further help in pre-processing, assigning specific colours to the variables or observations or give you examples of how to impute missing values.
 
 
 ## Closer look into gdaphen functions
