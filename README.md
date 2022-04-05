@@ -84,7 +84,7 @@ Gdaphen provides an environment with functions to perform:
 
 ## Publications using gdaphen:
 For now only our team Herault members @IGBMC Strasbourg used it but we hope others... as the reader, will like to implement it.
-The gdaphen methods manuscript is undergoing.
+The gdaphen methods manuscript is undergoing but a detailed explanation of the method can be found [here](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full#supplementary-material).
 
 
 1.[**Chidiac C, Xue Y, Muniz Moreno MDM, et al.** The Human SCN10AG1662S Point Mutation Established in Mice Impacts on Mechanical, Heat, and Cool Sensitivity. *Front Pharmacol*. 2021 Dec 1;12:780132. ](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full). [Take a look at figure 5](https://www.frontiersin.org/files/Articles/780132/fphar-12-780132-HTML/image_m/fphar-12-780132-g005.jpg)
