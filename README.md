@@ -90,7 +90,7 @@ The gdaphen methods manuscript is undergoing.
 
 
 ## Contributions
-Pull requests are always welcomed!. For major changes, problems, extra functionalities or if you need aid to run gdaphen in your own data please open an issue first or contact me (munizmorenomariadelmar@gmail.com) to discuss.
+Pull requests are always welcomed!. For major changes, problems, extra functionalities or if you need aid to run gdaphen in your own data please open an issue first or contact me Mar (munizmorenomariadelmar@gmail.com) and Yann Herault herault@igbmc.fr) to discuss.
 
 ## License
 [GPL-3](https://www.gnu.org/licenses/gpl-3.0.html)
