@@ -9,7 +9,7 @@ Gdaphen makes the analysis of phenotypic data much easier for medical researcher
 
 Other contributors that **must** be acknowledged for providing great discussions in stats, in their analytical needs, expectatives and requirements for the plots are **Yann Herault, Claire Gaveriaux-Ruff, Yaping Xue, Celeste Chidiac, Monsier Arnaud Duchon, Gopal Krishna and Valerie Herault**. And the last is not the less important! as Valerie is currently developping further functionalities for this project. 
 
-Thanks also to **Corentin Guioullier** that did his Master in statistics stage in with us and tried out the gdaphen scripts in Jupyter notebook.
+Thanks also to **Corentin Guioullier** that did his Master in statistics stage with us and tried out the gdaphen scripts in Jupyter notebook.
 
 ![gdaphen](https://github.com/munizmom/gdaphen/blob/master/images/graphicalAbstract.jpg)
 
