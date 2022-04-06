@@ -1,7 +1,7 @@
 # gdaphen
 
 [](https://img.shields.io/badge/Gdaphen-v0.0-pink)
-gdaphen is a R pipeline to identify the most important predictors qualitative and quantitative variables for discrimination of your variable of interest (like genotype or sex or response to treatment), by using phenotypic, ddPCR or clinical data from different diseases. Gdaphen is able to perform the analyses in individual variables and grouped variables that facilitate the assesment of behavioral or diagnostic tests as many variables are scored in the same tests.
+Gdaphen is a R pipeline to identify the most important predictors qualitative and quantitative variables for discrimination of your variable of interest (like genotype or sex or response to treatment), by using phenotypic, ddPCR or clinical data from different diseases. Gdaphen is able to perform the analyses in individual variables and grouped variables that facilitate the assesment of behavioral or diagnostic tests as many variables are scored in the same tests.
 
 This pipeline was developped in [Yann's Herault team](https://www.igbmc.fr/igbmc/missions/annuaire/yann-herault) as part of one of my postDoc projects and thanks to Yann's supervision.Gdaphen came to exist to perform an in deep statistically assessment of scored variables contributing to genotype effects, focusing specifically in elucidating which variables where contributing in explaining gene dosage effects in mouse and rat models carrying genomic duplications or Knock-out models.
 
