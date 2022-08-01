@@ -86,7 +86,8 @@ The gdaphen methods manuscript is undergoing but a detailed explanation of the m
 
 
 1. [**Chidiac C, Xue Y, Muniz Moreno MDM, et al.** The Human SCN10AG1662S Point Mutation Established in Mice Impacts on Mechanical, Heat, and Cool Sensitivity. *Front Pharmacol*. 2021 Dec 1;12:780132. ](https://www.frontiersin.org/articles/10.3389/fphar.2021.780132/full). [Take a look at figure 5](https://www.frontiersin.org/files/Articles/780132/fphar-12-780132-HTML/image_m/fphar-12-780132-g005.jpg)
-2. Two other papers are currently under revision using this method, stay tuned for more examples in more complex datasets!
+2. [**Xue Y, Kremer M, Muniz Moreno MDM, Chidiac C, Lorentz R, Birling MC, Barrot M, Herault Y, Gaveriaux-Ruff C.** The Human SCN9AR185H Point Mutation Induces Pain Hypersensitivity and Spontaneous Pain in Mice. *Front Mol Neurosci.* 2022 Jun 13;15:913990. PMID: 35769334.](https://www.frontiersin.org/articles/10.3389/fnmol.2022.913990/full)
+3. [**Duchon A, Muniz Moreno MdM, Chevalier C, Nalesso V, Andre P, Fructuoso-Castellar M, Mondino M, Po C, Noblet V, Birling MC, Potier MC and Herault Y.** www.biorxiv.org](https://www.biorxiv.org/content/10.1101/2022.06.06.494940v1.full.pdf)
 
 
 ## Contributions
