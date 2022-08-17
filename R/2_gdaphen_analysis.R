@@ -582,7 +582,7 @@ glm_rf_classifiers_CatVarEffects.function <- function(data,nameData,angle1,angle
 	# description: classifiers algorithms to identify the main discriminative 
 	# explanatory variables some specially selected to identify variables 
 	# affected by gene dosage as GLM, multiGLM and GLMNet. 
-	# And by an unsupervised method Random Forest
+	# And by an supervised method Random Forest or the unsupervised version of RF
 	#NOTE:
 	# The full_model is the model with all data : input file: phenoAll_4analysis_woHighCor
 	# The model_selected_vars is the full model without the highly correlated variables
